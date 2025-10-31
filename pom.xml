@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-context</module>
+        <module>spring-aop-xml</module>
     </modules>
 
     <properties>
@@ -23,6 +24,9 @@
         <logback-classic.version>1.5.8</logback-classic.version>
         <lombok.version>1.18.30</lombok.version>
         <spring-context.version>5.3.30</spring-context.version>
+        <spring-aop.version>5.3.27</spring-aop.version>
+        <aspectjrt.version>1.9.7</aspectjrt.version>
+        <aspectjweaver.version>1.9.7</aspectjweaver.version>
 
         <maven-surefire-plugin.version>3.5.0</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>3.5.0</maven-failsafe-plugin.version>
@@ -49,28 +53,26 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
-
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>${spring-context.version}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>org.springframework</groupId>-->
-<!--                <artifactId>spring-aop</artifactId>-->
-<!--                <version>${spring-aop.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>org.aspectj</groupId>-->
-<!--                <artifactId>aspectjrt</artifactId>-->
-<!--                <version>${aspectjrt.version}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>org.aspectj</groupId>-->
-<!--                <artifactId>aspectjweaver</artifactId>-->
-<!--                <version>${aspectjweaver.version}</version>-->
-<!--            </dependency>-->
-
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring-aop.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjrt</artifactId>
+                <version>${aspectjrt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>${aspectjweaver.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -158,6 +160,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
