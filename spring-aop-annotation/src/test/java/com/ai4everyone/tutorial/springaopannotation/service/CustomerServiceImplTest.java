@@ -1,14 +1,12 @@
-package com.ai4everyone.tutorial.springaopxml.service.impl;
+package com.ai4everyone.tutorial.springaopannotation.service;
 
-import com.ai4everyone.tutorial.springaopxml.service.CustomerService;
+import com.ai4everyone.tutorial.springaopannotation.api.CustomerService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class CustomerServiceImplTest {
     private static final Logger log = LoggerFactory.getLogger(CustomerServiceImplTest.class);

@@ -2,3 +2,4 @@
 ### modules
 - spring-context
 - spring-aop-xml
+- spring-aop-annotation
