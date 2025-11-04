@@ -13,7 +13,6 @@
         <module>spring-context</module>
         <module>spring-aop-xml</module>
         <module>spring-aop-annotation</module>
-        <module>spring-ioc-constructor</module>
     </modules>
 
     <properties>
