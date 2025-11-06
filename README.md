@@ -1,5 +1,5 @@
 ## spring-features 
 ### modules
 - spring-context
-- spring-aop-xml
-- spring-aop-annotation
+- aop-xml
+- aop-annotation

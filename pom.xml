@@ -11,8 +11,8 @@
 
     <modules>
         <module>spring-context</module>
-        <module>spring-aop-xml</module>
-        <module>spring-aop-annotation</module>
+        <module>aop-xml</module>
+        <module>aop-annotation</module>
     </modules>
 
     <properties>
