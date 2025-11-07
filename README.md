@@ -4,3 +4,4 @@
 - aop-xml
 - aop-annotation
 - annotation-config
+- qualifier
