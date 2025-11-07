@@ -13,6 +13,7 @@
         <module>spring-context</module>
         <module>aop-xml</module>
         <module>aop-annotation</module>
+        <module>annotation-config</module>
     </modules>
 
     <properties>
@@ -29,6 +30,7 @@
         <spring-aop.version>5.3.27</spring-aop.version>
         <aspectjrt.version>1.9.7</aspectjrt.version>
         <aspectjweaver.version>1.9.7</aspectjweaver.version>
+        <jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
 
         <maven-surefire-plugin.version>3.5.0</maven-surefire-plugin.version>
         <maven-failsafe-plugin.version>3.5.0</maven-failsafe-plugin.version>
@@ -74,6 +76,11 @@
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
                 <version>${aspectjweaver.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>${jakarta.annotation-api.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

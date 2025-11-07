@@ -3,3 +3,4 @@
 - spring-context
 - aop-xml
 - aop-annotation
+- annotation-config
